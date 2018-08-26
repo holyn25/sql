@@ -13,7 +13,7 @@ conn = pymssql.connect(
     database=name_yy
 )  # type: pymssql.Connection
 
-cursor = conn.cursor()  # type: cursor
+cursor = conn.cursor()  # type: pymssql.Cursor
 cursor.execute('update GameScoreInfo set Score = {} WHERE UserID = {}'.format(654123, 6541))  # type: cursor
 conn.commit()
 conn.close()
