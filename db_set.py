@@ -14,6 +14,6 @@ conn = pymssql.connect(
 )  # type: pymssql.Connection
 
 cursor = conn.cursor()  # type: pymssql.Cursor
-cursor.execute('update GameScoreInfo set Score = {} WHERE UserID = {}'.format(654123, 6541))  # type: cursor
+cursor.execute('update GameScoreInfo set Score = {} WHERE UserID = {}'.format(7000000, 6619))  # type: cursor
 conn.commit()
 conn.close()
